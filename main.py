@@ -9,11 +9,10 @@ with sync_playwright() as p:
     context = browser.new_context(
         locale="en-us",
         color_scheme="dark",
-        viewport=ViewportSize(width=500, height=250),
+        viewport=ViewportSize(width=1920, height=250),
         device_scale_factor=dsf,
     )
 
     amitheasshole.get_aita_post(browser)
-
 
     browser.close()

@@ -5,7 +5,7 @@ import amitheasshole
 dsf = (500 // 600) + 1
 
 with sync_playwright() as p:
-    browser = p.chromium.launch(headless=False)
+    browser = p.firefox.launch(headless=False)
     context = browser.new_context(
         locale="en-us",
         color_scheme="dark",
